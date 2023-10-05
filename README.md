@@ -3,3 +3,4 @@ Hello everyone!, this is one of my project for dicoding project submission, and 
 
 You can see at this link if you want to [see](https://staticwebarticle.netlify.app/)
 
+or just copy paste :  https://staticwebarticle.netlify.app/
