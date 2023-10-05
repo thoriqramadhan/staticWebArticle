@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+.image-slider{
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+}
+.image-slider *{
+    box-sizing: border-box;
+}
+.help{
+    color: white;
+    width: 2em;
+    height: 2em;
+    background:rgba(0,0,0,0.6);
+    border-radius:50%;
+    cursor: help;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0.5em;
+    top: 1em;
+}
+.helpText{
+    position: absolute;
+    left: 2.5em;
+    top: 1.2em;;
+    padding: 5px;
+    color: white;
+}
+.caption{
+    background: linear-gradient(rgba(0,0,0,0),#000);
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 4em 1em 2em 1em;
+    color: white;
+}
+.caption a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+.caption a:hover{
+    opacity: 0.6;
+}
+.caption p{
+    color: #8a8a8a;
+}
+.arrow-left, .arrow-right{
+    position: absolute;
+    background-color: white;
+    background-size: cover;
+    color: black;
+    top: 40%;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.arrow-left{
+    z-index: 1;
+    left: 1em;
+}
+.arrow-right{
+    right: 1em;
+}
+
+.image-fade{
+    animation: imgFade 0.5s ease-in-out;
+}
+@keyframes imgFade{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@media screen and (max-width:340px) {
+    .arrow-left,.arrow-right{
+        width: 2.3em;
+        height: 2.3em;
+    }
+}
